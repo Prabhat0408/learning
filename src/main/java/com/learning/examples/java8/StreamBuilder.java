@@ -3,6 +3,7 @@ package com.learning.examples.java8;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
+import java.util.stream.IntStream;
 import java.util.stream.Stream;
 
 public class StreamBuilder {
@@ -33,12 +34,13 @@ public class StreamBuilder {
 		 * stream.forEach(t->System.out.println(t));
 		 */
 		
-		
+	/*	//Stream Generator
 		Stream<Integer> stream = Stream.generate(()->(new Random()).nextInt(100));
-		
 		//stream.forEach(t->System.out.println(t));
+		stream.limit(2).forEach(System.out::println);*/
 		
-		stream.limit(20).forEach(System.out::println);
+		IntStream stream = "1234589abc".chars();
+		stream.forEach(t->System.out.println(t));
 	}
 
 }
