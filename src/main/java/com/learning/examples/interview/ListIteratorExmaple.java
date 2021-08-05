@@ -14,10 +14,11 @@ private static List<Integer> list= new ArrayList<Integer>();
 			list.add(len1);
 		}
 		
-		for(int i: list) {
-			System.out.println(i);
-		}
+		/*
+		 * for(int i: list) { System.out.println(i); }
+		 */
 		
+		System.out.println(list);
 		ListIterator<Integer> l = list.listIterator();
 		while(l.hasNext()) {
 			//Infinite loop situation
@@ -27,10 +28,10 @@ private static List<Integer> list= new ArrayList<Integer>();
 			 */
 			
 			//iterator with index
-			/*
-			 * System.out.print(" List Iterator Forward:"+(Integer)l.next());
-			 * System.out.print(" List Iterator next index:"+ l.nextIndex());
-			 */
+			
+			  System.out.println(" List Iterator Forward:"+(Integer)l.next());
+			  System.out.println(" List Iterator next index:"+ l.nextIndex());
+			 
 			
 			//iterator with illegal state exception
 			/*
@@ -39,16 +40,17 @@ private static List<Integer> list= new ArrayList<Integer>();
 			 * 
 			 * System.out.println(list);
 			 */
-			
-			System.out.print(" List Iterator Forward:"+(Integer)l.next());
+		
+			//System.out.print(" List Iterator Forward:"+(Integer)l.next());
 			
 		}
-		list.set(1, 100);
 		
-		while(l.hasPrevious()) {
-			System.out.println(" List Iterator previous:"+(Integer)l.previous());
-		}
-		
+		  list.set(1, 100);
+		  System.out.println(list);
+		 
+		  while(l.hasPrevious()) {
+		 System.out.println(" List Iterator previous:"+(Integer)l.previous()); }
+		 
 	}
 
 }

@@ -11,11 +11,15 @@ public class JustFortest {
 		 * [] arr = str.split("\\/");
 		 */
 		
-		str =str.replace(",", "$");
-		String[] arr = str.split("\\$");
+		//str =str.replace(",", "$");
+		str =str.replace(",", "^");
+		//String[] arr = str.split("\\$");
+		String[] arr = str.split("\\^");
 		Stream<String> stream = Stream.of(arr);
 		stream.forEach(t->System.out.println(t));
 		
+		
+		System.out.println(1%10);
 	}
 
 }

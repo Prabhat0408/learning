@@ -25,7 +25,7 @@ public class StreamCollector {
 		Stream<Integer> streamArr = Stream.of(eveArr);
 		streamArr.forEach(System.out:: print);
 		
-		
+		//String Implementation of string using arr and stream
 		List<String> listStr = new ArrayList<String>();
 		listStr.add("RAM");
 		listStr.add("Naveen");

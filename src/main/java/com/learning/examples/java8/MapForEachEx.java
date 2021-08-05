@@ -11,6 +11,13 @@ public class MapForEachEx {
 		map.put(4, "four");
 		map.put(5, "five");
 		
+		Map<Integer,String> map1= new HashMap<Integer,String>();
+		map1.put(1, "one");
+		map1.put(2, "two");
+		map1.put(3, "three");
+		map1.put(4, "four");
+		map1.put(5, "five");
+		
 		/*  old Method
 		 * for(Map.Entry<Integer, String> entry : map.entrySet()) { int key = (int)
 		 * entry.getKey(); System.out.println("Key Is "+ key +
@@ -21,6 +28,9 @@ public class MapForEachEx {
 		//map.forEach((k,v)->{ System.out.println("Key = " + k + ", Value = " + v);});
 		
 		map.forEach((k,v)->System.out.println("Key = " + k + ", Value = " + v));
+		
+		
+		map.forEach((k,v)-> map1.get(k).);
 		
 		
 		
